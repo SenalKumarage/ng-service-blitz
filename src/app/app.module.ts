@@ -3,16 +3,21 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { SharedService } from './shared.service';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FirstComponent,
+    SecondComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
